@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/selector_default_pressed" >
+
+    <com.zcmedical.common.widget.CircleImageView
+        android:id="@+id/cimv_user_head"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="12dp"
+        android:src="@drawable/common_icon_default_user_head" />
+
+    <TextView
+        android:id="@+id/tv_posts_title"
+        style="@style/TextView.Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="14dp"
+        android:layout_toRightOf="@id/cimv_user_head"
+        android:ellipsize="end"
+		android:singleLine="true"
+        android:text="帖子标题帖子标题帖子标题帖子标题帖子标题帖子标题帖子标题帖子标题帖子标题帖子标题帖子标题" />
+
+    <FrameLayout
+        android:id="@+id/fl_posts_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/tv_posts_title"
+        android:layout_below="@id/tv_posts_title"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="8dp" >
+
+        <TextView
+            android:id="@+id/tv_posts_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="3"
+            android:text="帖子内容帖子内容帖子内容帖子内容"
+            android:textColor="@color/gray"
+            android:textSize="13sp" />
+
+        <LinearLayout
+            android:id="@+id/ll_posts_pics"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/tv_user_name"
+            android:layout_alignLeft="@id/tv_posts_title"
+            android:layout_below="@+id/tv_posts_title"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@+id/imv_posts_pic1"
+                android:layout_width="92dp"
+                android:layout_height="92dp"
+                android:layout_marginRight="6dp"
+                android:scaleType="centerCrop"
+                android:src="@color/micro_gray" />
+
+            <ImageView
+                android:id="@+id/imv_posts_pic2"
+                android:layout_width="92dp"
+                android:layout_height="92dp"
+                android:layout_marginRight="6dp"
+                android:scaleType="centerCrop"
+                android:src="@color/micro_gray" />
+
+            <ImageView
+                android:id="@+id/imv_posts_pic3"
+                android:layout_width="92dp"
+                android:layout_height="92dp"
+                android:scaleType="centerCrop"
+                android:src="@color/micro_gray" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tv_user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/fl_posts_content"
+        android:layout_below="@id/fl_posts_content"
+        android:layout_marginTop="8dp"
+        android:ellipsize="end"
+        android:text="用户名"
+        android:textColor="@color/micro_gray"
+        android:textSize="11sp" />
+
+    <TextView
+        android:id="@+id/tv_separate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/tv_user_name"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_toRightOf="@id/tv_user_name"
+        android:ellipsize="end"
+        android:text="|"
+        android:textColor="@color/micro_gray"
+        android:textSize="11sp" />
+
+    <TextView
+        android:id="@+id/tv_posts_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/tv_separate"
+        android:layout_marginRight="6dp"
+        android:layout_toLeftOf="@+id/tv_view_count"
+        android:layout_toRightOf="@id/tv_separate"
+        android:ellipsize="end"
+        android:text="2015.5.14"
+        android:textColor="@color/micro_gray"
+        android:textSize="11sp" />
+
+    <TextView
+        android:id="@+id/tv_view_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/tv_posts_date"
+        android:layout_marginRight="6dp"
+        android:layout_toLeftOf="@+id/tv_comment_count"
+        android:drawableLeft="@drawable/bbs_icon_seen"
+        android:drawablePadding="3dp"
+        android:text="100"
+        android:textColor="@color/micro_gray"
+        android:textSize="11sp" />
+
+    <TextView
+        android:id="@+id/tv_comment_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/tv_posts_date"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:drawableLeft="@drawable/bbs_icon_comment"
+        android:drawablePadding="3dp"
+        android:text="100"
+        android:textColor="@color/micro_gray"
+        android:textSize="11sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@id/tv_user_name"
+        android:background="@color/lineColor"
+        android:layout_marginTop="12dp" />
+
+</RelativeLayout>

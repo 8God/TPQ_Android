@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="tv_circle_admin_title">圈主</string>
+    <string name="tv_circle_member_title">成员</string>
+    <string name="exit_circle_tips">确定退出该圈子吗？</string>
+    <string name="exit_circle_alert">确定退出该圈子吗？</string>
+
+</resources>

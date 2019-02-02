@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <integer-array name="levelArray">
+        <item>999</item>
+        <item>3333</item>
+        <item>6666</item>
+        <item>9999</item>
+        <item>19999</item>
+        <item>33333</item>
+        <item>66666</item>
+        <item>99999</item>
+    </integer-array>
+
+</resources>

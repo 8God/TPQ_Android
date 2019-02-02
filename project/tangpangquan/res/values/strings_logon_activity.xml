@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="forget_psw_text">忘记密码</string>
+    <string name="user_account_hint">请输入昵称/手机号</string>
+    <string name="user_psw_hint">请输入密码</string>
+    <string name="logon_qq">QQ</string>
+    <string name="logon_wechat">微信</string>
+    <string name="logon_weibo">微博</string>
+    <string name="quick_logon_tips">快捷登录，无需注册</string>
+    <string name="logon_sucessful">登录成功</string>
+    <string name="logoning">登录中...</string>
+    <string name="no_input_logon_alert">请填写登录信息</string>
+
+</resources>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="has_like_comment">已赞</string>
+    <string name="like_comment">点赞</string>
+    <string name="deal_comment_dialog_title">评论选项</string>
+
+</resources>

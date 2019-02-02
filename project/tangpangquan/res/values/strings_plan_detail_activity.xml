@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="dialog_msg_plan_follow_create">您可以选择马上开始执行计划，也可以先了解一下计划详情，明天开始。</string>
+
+</resources>

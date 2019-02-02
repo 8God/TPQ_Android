@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/default_background"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rl_headview_circle_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="14dp"
+        android:background="@@drawable/selector_default_pressed" >
+
+        <com.zcmedical.common.widget.CircleImageView
+            android:id="@+id/cimv_forum_logo"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="12dp"
+            android:src="@color/micro_gray" />
+
+        <TextView
+            android:id="@+id/tv_forum_title"
+            style="@style/TextView.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="14dp"
+            android:layout_toRightOf="@id/cimv_forum_logo"
+            android:text="圈子名字" />
+
+        <LinearLayout
+            android:id="@+id/rl_forum_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_toRightOf="@id/tv_forum_title"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_forum_member_count"
+                style="@style/TextView.Tips"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="100" />
+
+            <TextView
+                style="@style/TextView.Tips"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:text="成员" />
+
+            <TextView
+                style="@style/TextView.Tips"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:text="|" />
+
+            <TextView
+                android:id="@+id/tv_forum_posts_count"
+                style="@style/TextView.Tips"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="100" />
+
+            <TextView
+                style="@style/TextView.Tips"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:text="话题" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_forum_description"
+            style="@style/TextView.SubTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/tv_forum_title"
+            android:layout_below="@id/tv_forum_title"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="8dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="说明" />
+
+        <ImageView
+            android:id="@+id/imv_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp"
+            android:src="@drawable/common_icon_arrow"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/lineColor" />
+    
+     <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/lineColor"
+        android:layout_marginTop="10dp" />
+
+</LinearLayout>

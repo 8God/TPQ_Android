@@ -1,0 +1,487 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.zcmedical.tangpangquan"
+    android:versionCode="6"
+    android:versionName="0.0.6" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="22" />
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+
+    <application
+        android:name="com.zcmedical.common.base.TpqApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/logo_udr"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+
+        <!-- 设置环信应用的appkey -->
+        <meta-data
+            android:name="EASEMOB_APPKEY"
+            android:value="zczymed01#leshou" />
+        <!-- 声明sdk所需的service SDK核心功能 -->
+        <service android:name="com.easemob.chat.EMChatService" />
+
+        <!-- 欢迎页面 -->
+        <activity
+            android:name="com.zcmedical.tangpangquan.activity.WelcomeActivity"
+            android:label="@string/app_name"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoTitleBar.Fullscreen" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name="com.zcmedical.tangpangquan.push.AlarmReceiver"
+            tools:ignore="ExportedReceiver" >
+            <intent-filter>
+                <action android:name="com.zcmedical.tangpangquan.push.alarm_action" />
+            </intent-filter>
+        </receiver>
+
+        <!-- 登录界面 -->
+        <activity
+            android:name="com.zcmedical.tangpangquan.activity.LogonActivity"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+
+        <!-- 注册界面 -->
+        <activity
+            android:name="com.zcmedical.tangpangquan.activity.RegisterationActivity"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+
+        <!-- 忘记密码界面 -->
+        <activity
+            android:name="com.zcmedical.tangpangquan.activity.ForgetPasswordActivity"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+
+        <!-- 忘记密码下一步界面 -->
+        <activity
+            android:name="com.zcmedical.tangpangquan.activity.ForgetPswSecondStepActivity"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+
+        <!-- 首页 -->
+        <activity
+            android:name="com.zcmedical.tangpangquan.activity.HomeActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 帖子详情 -->
+        <activity
+            android:name="com.zcmedical.tangpangquan.activity.PostsDetailActivity"
+            android:label="@string/title_activity_posts"
+            android:launchMode="standard"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 圈子 -->
+        <activity
+            android:name="com.zcmedical.tangpangquan.activity.CircleActivity"
+            android:launchMode="standard"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 圈子信息 -->
+        <activity
+            android:name="com.zcmedical.tangpangquan.activity.CircleInfoActivity"
+            android:launchMode="standard"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 发帖子页面 -->
+        <activity
+            android:name="com.zcmedical.tangpangquan.activity.PublishPostActivity"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+
+        <!-- 帖子回复页面 -->
+        <activity
+            android:name="com.zcmedical.tangpangquan.activity.PostCommentActivity"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+
+        <!-- 举报页面 -->
+        <activity
+            android:name="com.zcmedical.tangpangquan.activity.BbsReportActivity"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+
+        <!-- 社区用户界面 -->
+        <activity
+            android:name="com.zcmedical.tangpangquan.activity.BbsUserInfoActivity"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+
+        <!-- 社区搜索界面 -->
+        <activity
+            android:name="com.zcmedical.tangpangquan.activity.BbsSearchActivity"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+
+        <!-- 咨询界面 -->
+        <activity
+            android:name="com.zcmedical.tangpangquan.activity.ChatActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 自定义的alertdialog -->
+        <activity
+            android:name="com.zcmedical.tangpangquan.activity.AlertDialog"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyDialogStyle" >
+        </activity>
+
+        <!-- 咨询历史 -->
+        <activity
+            android:name="com.zcmedical.tangpangquan.activity.ChatHistoryActivity"
+            android:launchMode="standard"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 医生详情页 -->
+        <activity
+            android:name="com.zcmedical.tangpangquan.activity.DoctorDetailsActivity"
+            android:launchMode="standard"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 医生详情页 -->
+        <activity
+            android:name="com.zcmedical.tangpangquan.activity.DoctorInfoActivity"
+            android:launchMode="standard"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 用户评价页 -->
+        <activity
+            android:name="com.zcmedical.tangpangquan.activity.DoctorEvaluationActivity"
+            android:launchMode="standard"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 我的关注 -->
+        <activity
+            android:name="com.zcmedical.tangpangquan.activity.MyFollowActivity"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+
+        <!-- 体重 -->
+        <activity
+            android:name="com.zcmedical.tangpangquan.activity.WeightMainActivity"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+
+        <!-- 血糖 -->
+        <activity
+            android:name="com.zcmedical.tangpangquan.activity.BloodSugarActivity"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+
+        <!-- 添加血糖 -->
+        <activity
+            android:name="com.zcmedical.tangpangquan.activity.BloodSugarAddActivity"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+
+        <!-- 记录身高 -->
+        <activity
+            android:name="com.zcmedical.tangpangquan.activity.RecordHeightActivity"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+
+        <!-- 记录体重 -->
+        <activity
+            android:name="com.zcmedical.tangpangquan.activity.RecordWeightActivity"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+
+        <!-- 编辑身高和目标体重 -->
+        <activity
+            android:name="com.zcmedical.tangpangquan.activity.EditHeightAndTargetWeightActivity"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+
+        <!-- 我的提醒首页 -->
+        <activity
+            android:name="com.zcmedical.tangpangquan.activity.RemindMainActivity"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+
+        <!-- 提醒设置 -->
+        <activity
+            android:name="com.zcmedical.tangpangquan.activity.RemindDetailsActivity"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+
+        <!-- webActivity -->
+        <activity
+            android:name="com.zcmedical.tangpangquan.activity.WebViewActivity"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+
+        <!-- 我的粉丝 -->
+        <activity
+            android:name="com.zcmedical.tangpangquan.activity.MyFansActivity"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+
+        <!-- 我的圈子 -->
+        <activity
+            android:name="com.zcmedical.tangpangquan.activity.MyCircleListActivity"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+
+        <!-- 意见反馈 -->
+        <activity
+            android:name="com.zcmedical.tangpangquan.activity.FeedbackActivity"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+
+        <!-- 关于我们 -->
+        <activity
+            android:name="com.zcmedical.tangpangquan.activity.AboutUsActivity"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+
+        <!-- 评价医生 -->
+        <activity
+            android:name="com.zcmedical.tangpangquan.activity.EvaluationOfDoctorActivity"
+            android:launchMode="standard"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 计划 -->
+        <activity
+            android:name="com.zcmedical.tangpangquan.activity.PlanActivity"
+            android:launchMode="standard"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 计划详情 -->
+        <activity
+            android:name="com.zcmedical.tangpangquan.activity.PlanDetailActivity"
+            android:launchMode="standard"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 体检 -->
+        <activity
+            android:name="com.zcmedical.tangpangquan.activity.MedicalRecordActivity"
+            android:launchMode="standard"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 我的资料 -->
+        <activity
+            android:name="com.zcmedical.tangpangquan.activity.UserInfoDetailActivity"
+            android:launchMode="standard"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 我的昵称 -->
+        <activity
+            android:name="com.zcmedical.tangpangquan.activity.NickNameSettingActivity"
+            android:launchMode="standard"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 我的真实姓名 -->
+        <activity
+            android:name="com.zcmedical.tangpangquan.activity.UserNameSettingActivity"
+            android:launchMode="standard"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 我的收藏 -->
+        <activity
+            android:name="com.zcmedical.tangpangquan.activity.MyPostsCollectionActivity"
+            android:launchMode="standard"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 城市选择 -->
+        <activity
+            android:name="com.zcmedical.common.widget.citylist.CityListActivity"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+
+        <!-- 我的等级 -->
+        <activity
+            android:name="com.zcmedical.tangpangquan.activity.MyLevelActivity"
+            android:launchMode="standard"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- Web 页面 -->
+        <activity
+            android:name="com.zcmedical.common.component.SimpleWebViewActivity"
+            android:configChanges="keyboardHidden"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateUnspecified" >
+        </activity>
+
+        <!-- 体检记录界面 -->
+        <activity
+            android:name="com.zcmedical.tangpangquan.activity.MedicalRecordInputActivity"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" >
+        </activity>
+
+        <!-- 账号安全 -->
+        <activity
+            android:name="com.zcmedical.tangpangquan.activity.AccountSafetyActivity"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+
+        <!-- 账号绑定 -->
+        <activity
+            android:name="com.zcmedical.tangpangquan.activity.AccountBindingActivity"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+
+        <!-- 手机绑定 -->
+        <activity
+            android:name="com.zcmedical.tangpangquan.activity.MobileBindingActivity"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+
+        <!-- 修改密码 -->
+        <activity
+            android:name="com.zcmedical.tangpangquan.activity.ModifyPasswordActivity"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+
+        <!-- 预览体检记录图片 -->
+        <activity
+            android:name="com.zcmedical.tangpangquan.activity.MedicalRecordPicShowingActivity"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+
+        <!-- 引导页 -->
+        <activity
+            android:name="com.zcmedical.tangpangquan.activity.GuidePageActivity"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+
+        <!-- ShareSDK UI Shell -->
+        <activity
+            android:name="com.mob.tools.MobUIShell"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+            <intent-filter>
+                <data android:scheme="tencent100371282" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!-- 微信分享回调 -->
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <!-- 开启APP更新下载服务 -->
+        <service
+            android:name="com.zcmedical.common.update.AppUpdateDownloadService"
+            android:enabled="true" >
+            <intent-filter>
+                <action android:name="com.zcmedical.common.update.AppUpdateDownloadService" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

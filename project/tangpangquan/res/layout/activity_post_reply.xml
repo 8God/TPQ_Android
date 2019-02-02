@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layout_toolbar"
+        android:layout_marginTop="-4dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_reply_comment_content"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@color/bg_disable_post_title"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:singleLine="true"
+            android:text="评论内容评论内容评论内容评论内容评论内容评论内容"
+            android:textColor="@color/micro_gray"
+            android:textSize="16sp" />
+
+        <include layout="@layout/default_line" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@android:color/white" >
+
+            <EditText
+                android:id="@+id/edt_comment_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/ll_comment_pics"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="16dp"
+                android:background="@null"
+                android:gravity="top"
+                android:hint="@string/post_content_hint"
+                android:singleLine="false"
+                android:textColor="@color/dark_gray"
+                android:textColorHint="@color/lineColor"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:id="@+id/ll_comment_pics"
+                android:layout_width="match_parent"
+                android:layout_height="68dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="12dp"
+                android:orientation="horizontal" >
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <include
+        android:id="@+id/layout_toolbar"
+        layout="@layout/toolbar" />
+
+</RelativeLayout>

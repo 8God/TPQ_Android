@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="title_tab_home">首页</string>
+    <string name="title_tab_bbs">社区</string>
+    <string name="title_tab_qanda">问答</string>
+    <string name="title_tab_person">我的</string>
+</resources>

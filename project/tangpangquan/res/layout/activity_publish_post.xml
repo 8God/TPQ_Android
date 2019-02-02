@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/default_background"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layout_toolbar"
+        android:layout_marginTop="-4dp"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/edt_post_title"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@android:color/white"
+            android:gravity="center_vertical"
+            android:hint="@string/post_title_hint"
+            android:paddingLeft="16dp"
+            android:singleLine="true"
+            android:textColor="@color/dark_gray"
+            android:textColorHint="@color/lineColor"
+            android:textSize="16sp" />
+
+        <include layout="@layout/default_line" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="10dp"
+            android:background="@color/lineColor" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@android:color/white" >
+
+            <EditText
+                android:id="@+id/edt_post_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/ll_post_pics"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="16dp"
+                android:background="@null"
+                android:gravity="top"
+                android:hint="@string/post_content_hint"
+                android:singleLine="false"
+                android:textColor="@color/dark_gray"
+                android:textColorHint="@color/lineColor"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:id="@+id/ll_post_pics"
+                android:layout_width="match_parent"
+                android:layout_height="68dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="12dp"
+                android:orientation="horizontal" >
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_select_circle"
+            android:layout_width="match_parent"
+            android:layout_height="36dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:text="请选择圈子："
+                android:textColor="@color/middle_gray"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_select_circle"
+                android:layout_width="wrap_content"
+                android:layout_height="28dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="12dp"
+                android:background="@drawable/bg_add_post_pic"
+                android:drawableRight="@drawable/common_icon_arrow"
+                android:gravity="center_vertical"
+                android:paddingLeft="8dp"
+                android:paddingRight="4dp"
+                android:text="已选择圈子"
+                android:textColor="@color/middle_gray"
+                android:textSize="14sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <include
+        android:id="@+id/layout_toolbar"
+        layout="@layout/toolbar" />
+
+</RelativeLayout>

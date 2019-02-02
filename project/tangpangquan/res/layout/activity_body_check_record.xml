@@ -1,0 +1,622 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/default_background"
+    android:fitsSystemWindows="true" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_toolbar"
+        android:layout_marginTop="-4dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:descendantFocusability="afterDescendants"
+            android:orientation="vertical"
+            android:paddingBottom="20dp" >
+
+            <RelativeLayout
+                android:id="@+id/rl_select_operation_time"
+                style="@style/bodycheck_input_item"
+                android:layout_marginTop="10dp"
+                android:descendantFocusability="blocksDescendants" >
+
+                <TextView
+                    style="@style/bodycheck_title"
+                    android:text="@string/title_operation_time" />
+
+                <EditText
+                    android:id="@+id/edt_operation_time"
+                    style="@style/bodycheck_input"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="16dp"
+                    android:focusable="false"
+                    android:hint="@string/hint_select_operation_time" />
+
+                <include layout="@layout/default_line" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_select_record_time"
+                style="@style/bodycheck_input_item" >
+
+                <TextView
+                    style="@style/bodycheck_title"
+                    android:text="@string/title_record_time" />
+
+                <EditText
+                    android:id="@+id/edt_record_time"
+                    style="@style/bodycheck_input"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="16dp"
+                    android:focusable="false"
+                    android:hint="@string/hint_select_record_time" />
+
+                <include layout="@layout/default_line" />
+            </RelativeLayout>
+
+            <include layout="@layout/default_line" />
+
+            <RelativeLayout
+                style="@style/bodycheck_input_item"
+                android:layout_marginTop="10dp" >
+
+                <TextView
+                    style="@style/bodycheck_title"
+                    android:text="@string/title_bxb" />
+
+                <LinearLayout style="@style/bodycheck_data_layout" >
+
+                    <EditText
+                        android:id="@+id/edt_bxb"
+                        style="@style/bodycheck_input"
+                        android:layout_toLeftOf="@+id/tv_bxb_analysis_result"
+                        android:hint="@string/hint_input_bodycheck_data"
+                        android:tag="@+id/tv_bxb_analysis_result" />
+
+                    <TextView
+                        android:id="@+id/tv_bxb_analysis_result"
+                        style="@style/bodycheck_analysis_result_text" />
+                </LinearLayout>
+
+                <include layout="@layout/default_line" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/bodycheck_input_item" >
+
+                <TextView
+                    style="@style/bodycheck_title"
+                    android:text="@string/title_lbxb" />
+
+                <LinearLayout style="@style/bodycheck_data_layout" >
+
+                    <EditText
+                        android:id="@+id/edt_lbxb"
+                        style="@style/bodycheck_input"
+                        android:hint="@string/hint_input_bodycheck_data"
+                        android:tag="@+id/tv_lbxb_analysis_result" />
+
+                    <TextView
+                        android:id="@+id/tv_lbxb_analysis_result"
+                        style="@style/bodycheck_analysis_result_text" />
+                </LinearLayout>
+
+                <include layout="@layout/default_line" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/bodycheck_input_item" >
+
+                <TextView
+                    style="@style/bodycheck_title"
+                    android:text="@string/title_hxb" />
+
+                <LinearLayout style="@style/bodycheck_data_layout" >
+
+                    <EditText
+                        android:id="@+id/edt_hxb"
+                        style="@style/bodycheck_input"
+                        android:hint="@string/hint_input_bodycheck_data"
+                        android:tag="@+id/tv_hxb_analysis_result" />
+
+                    <TextView
+                        android:id="@+id/tv_hxb_analysis_result"
+                        style="@style/bodycheck_analysis_result_text" />
+                </LinearLayout>
+
+                <include layout="@layout/default_line" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/bodycheck_input_item" >
+
+                <TextView
+                    style="@style/bodycheck_title"
+                    android:text="@string/title_xhdb" />
+
+                <LinearLayout style="@style/bodycheck_data_layout" >
+
+                    <EditText
+                        android:id="@+id/edt_xhdb"
+                        style="@style/bodycheck_input"
+                        android:hint="@string/hint_input_bodycheck_data"
+                        android:tag="@+id/tv_xhdb_analysis_result" />
+
+                    <TextView
+                        android:id="@+id/tv_xhdb_analysis_result"
+                        style="@style/bodycheck_analysis_result_text" />
+                </LinearLayout>
+
+                <include layout="@layout/default_line" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/bodycheck_input_item" >
+
+                <TextView
+                    style="@style/bodycheck_title"
+                    android:text="@string/title_qbdb" />
+
+                <LinearLayout style="@style/bodycheck_data_layout" >
+
+                    <EditText
+                        android:id="@+id/edt_qbdb"
+                        style="@style/bodycheck_input"
+                        android:hint="@string/hint_input_bodycheck_data"
+                        android:tag="@+id/tv_qbdb_analysis_result" />
+
+                    <TextView
+                        android:id="@+id/tv_qbdb_analysis_result"
+                        style="@style/bodycheck_analysis_result_text" />
+                </LinearLayout>
+
+                <include layout="@layout/default_line" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/bodycheck_input_item" >
+
+                <TextView
+                    style="@style/bodycheck_title"
+                    android:text="@string/title_ztdb" />
+
+                <LinearLayout style="@style/bodycheck_data_layout" >
+
+                    <EditText
+                        android:id="@+id/edt_ztdb"
+                        style="@style/bodycheck_input"
+                        android:hint="@string/hint_input_bodycheck_data"
+                        android:tag="@+id/tv_ztdb_analysis_result" />
+
+                    <TextView
+                        android:id="@+id/tv_ztdb_analysis_result"
+                        style="@style/bodycheck_analysis_result_text" />
+                </LinearLayout>
+
+                <include layout="@layout/default_line" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/bodycheck_input_item" >
+
+                <TextView
+                    style="@style/bodycheck_title"
+                    android:text="@string/title_kfxt" />
+
+                <LinearLayout style="@style/bodycheck_data_layout" >
+
+                    <EditText
+                        android:id="@+id/edt_kfxt"
+                        style="@style/bodycheck_input"
+                        android:hint="@string/hint_input_bodycheck_data"
+                        android:tag="@+id/tv_kfxt_analysis_result" />
+
+                    <TextView
+                        android:id="@+id/tv_kfxt_analysis_result"
+                        style="@style/bodycheck_analysis_result_text" />
+                </LinearLayout>
+
+                <include layout="@layout/default_line" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/bodycheck_input_item" >
+
+                <TextView
+                    style="@style/bodycheck_title"
+                    android:text="@string/title_ch2xsxt" />
+
+                <LinearLayout style="@style/bodycheck_data_layout" >
+
+                    <EditText
+                        android:id="@+id/edt_ch2xsxt"
+                        style="@style/bodycheck_input"
+                        android:hint="@string/hint_input_bodycheck_data"
+                        android:tag="@+id/tv_ch2xsxt_analysis_result" />
+
+                    <TextView
+                        android:id="@+id/tv_ch2xsxt_analysis_result"
+                        style="@style/bodycheck_analysis_result_text" />
+                </LinearLayout>
+
+                <include layout="@layout/default_line" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/bodycheck_input_item" >
+
+                <TextView
+                    style="@style/bodycheck_title"
+                    android:text="@string/title_thxhdb" />
+
+                <LinearLayout style="@style/bodycheck_data_layout" >
+
+                    <EditText
+                        android:id="@+id/edt_thxhdb"
+                        style="@style/bodycheck_input"
+                        android:hint="@string/hint_input_bodycheck_data"
+                        android:tag="@+id/tv_thxhdb_analysis_result" />
+
+                    <TextView
+                        android:id="@+id/tv_thxhdb_analysis_result"
+                        style="@style/bodycheck_analysis_result_text" />
+                </LinearLayout>
+
+                <include layout="@layout/default_line" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/bodycheck_input_item" >
+
+                <TextView
+                    style="@style/bodycheck_title"
+                    android:text="@string/title_kfyds" />
+
+                <LinearLayout style="@style/bodycheck_data_layout" >
+
+                    <EditText
+                        android:id="@+id/edt_kfyds"
+                        style="@style/bodycheck_input"
+                        android:hint="@string/hint_input_bodycheck_data"
+                        android:tag="@+id/tv_kfyds_analysis_result" />
+
+                    <TextView
+                        android:id="@+id/tv_kfyds_analysis_result"
+                        style="@style/bodycheck_analysis_result_text" />
+                </LinearLayout>
+
+                <include layout="@layout/default_line" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/bodycheck_input_item" >
+
+                <TextView
+                    style="@style/bodycheck_title"
+                    android:text="@string/title_kfct" />
+
+                <LinearLayout style="@style/bodycheck_data_layout" >
+
+                    <EditText
+                        android:id="@+id/edt_kfct"
+                        style="@style/bodycheck_input"
+                        android:hint="@string/hint_input_bodycheck_data"
+                        android:tag="@+id/tv_kfct_analysis_result" />
+
+                    <TextView
+                        android:id="@+id/tv_kfct_analysis_result"
+                        style="@style/bodycheck_analysis_result_text" />
+                </LinearLayout>
+
+                <include layout="@layout/default_line" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/bodycheck_input_item" >
+
+                <TextView
+                    style="@style/bodycheck_title"
+                    android:text="@string/title_ch2xsyds" />
+
+                <LinearLayout style="@style/bodycheck_data_layout" >
+
+                    <EditText
+                        android:id="@+id/edt_ch2xsyds"
+                        style="@style/bodycheck_input"
+                        android:hint="@string/hint_input_bodycheck_data"
+                        android:tag="@+id/tv_ch2xsyds_analysis_result" />
+
+                    <TextView
+                        android:id="@+id/tv_ch2xsyds_analysis_result"
+                        style="@style/bodycheck_analysis_result_text" />
+                </LinearLayout>
+
+                <include layout="@layout/default_line" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/bodycheck_input_item" >
+
+                <TextView
+                    style="@style/bodycheck_title"
+                    android:text="@string/title_ch2xsct" />
+
+                <LinearLayout style="@style/bodycheck_data_layout" >
+
+                    <EditText
+                        android:id="@+id/edt_ch2xsct"
+                        style="@style/bodycheck_input"
+                        android:hint="@string/hint_input_bodycheck_data"
+                        android:tag="@+id/tv_ch2xsct_analysis_result" />
+
+                    <TextView
+                        android:id="@+id/tv_ch2xsct_analysis_result"
+                        style="@style/bodycheck_analysis_result_text" />
+                </LinearLayout>
+
+                <include layout="@layout/default_line" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/bodycheck_input_item" >
+
+                <TextView
+                    style="@style/bodycheck_title"
+                    android:text="@string/title_bdb" />
+
+                <LinearLayout style="@style/bodycheck_data_layout" >
+
+                    <EditText
+                        android:id="@+id/edt_bdb"
+                        style="@style/bodycheck_input"
+                        android:hint="@string/hint_input_bodycheck_data"
+                        android:tag="@+id/tv_bdb_analysis_result" />
+
+                    <TextView
+                        android:id="@+id/tv_bdb_analysis_result"
+                        style="@style/bodycheck_analysis_result_text" />
+                </LinearLayout>
+
+                <include layout="@layout/default_line" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/bodycheck_input_item" >
+
+                <TextView
+                    style="@style/bodycheck_title"
+                    android:text="@string/title_gysz" />
+
+                <LinearLayout style="@style/bodycheck_data_layout" >
+
+                    <EditText
+                        android:id="@+id/edt_gysz"
+                        style="@style/bodycheck_input"
+                        android:hint="@string/hint_input_bodycheck_data"
+                        android:tag="@+id/tv_gysz_analysis_result" />
+
+                    <TextView
+                        android:id="@+id/tv_gysz_analysis_result"
+                        style="@style/bodycheck_analysis_result_text" />
+                </LinearLayout>
+
+                <include layout="@layout/default_line" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/bodycheck_input_item" >
+
+                <TextView
+                    style="@style/bodycheck_title"
+                    android:text="@string/title_dgc" />
+
+                <LinearLayout style="@style/bodycheck_data_layout" >
+
+                    <EditText
+                        android:id="@+id/edt_dgc"
+                        style="@style/bodycheck_input"
+                        android:hint="@string/hint_input_bodycheck_data"
+                        android:tag="@+id/tv_dgc_analysis_result" />
+
+                    <TextView
+                        android:id="@+id/tv_dgc_analysis_result"
+                        style="@style/bodycheck_analysis_result_text" />
+                </LinearLayout>
+
+                <include layout="@layout/default_line" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/bodycheck_input_item" >
+
+                <TextView
+                    style="@style/bodycheck_title"
+                    android:text="@string/title_dmdzdb" />
+
+                <LinearLayout style="@style/bodycheck_data_layout" >
+
+                    <EditText
+                        android:id="@+id/edt_dmdzdb"
+                        style="@style/bodycheck_input"
+                        android:hint="@string/hint_input_bodycheck_data"
+                        android:tag="@+id/tv_dmdzdb_analysis_result" />
+
+                    <TextView
+                        android:id="@+id/tv_dmdzdb_analysis_result"
+                        style="@style/bodycheck_analysis_result_text" />
+                </LinearLayout>
+
+                <include layout="@layout/default_line" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/bodycheck_input_item" >
+
+                <TextView
+                    style="@style/bodycheck_title"
+                    android:text="@string/title_gmdzdb" />
+
+                <LinearLayout style="@style/bodycheck_data_layout" >
+
+                    <EditText
+                        android:id="@+id/edt_gmdzdb"
+                        style="@style/bodycheck_input"
+                        android:hint="@string/hint_input_bodycheck_data"
+                        android:tag="@+id/tv_gmdzdb_analysis_result" />
+
+                    <TextView
+                        android:id="@+id/tv_gmdzdb_analysis_result"
+                        style="@style/bodycheck_analysis_result_text" />
+                </LinearLayout>
+
+                <include layout="@layout/default_line" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/bodycheck_input_item" >
+
+                <TextView
+                    style="@style/bodycheck_title"
+                    android:text="@string/title_ns" />
+
+                <LinearLayout style="@style/bodycheck_data_layout" >
+
+                    <EditText
+                        android:id="@+id/edt_ns"
+                        style="@style/bodycheck_input"
+                        android:hint="@string/hint_input_bodycheck_data"
+                        android:tag="@+id/tv_ns_analysis_result" />
+
+                    <TextView
+                        android:id="@+id/tv_ns_analysis_result"
+                        style="@style/bodycheck_analysis_result_text" />
+                </LinearLayout>
+
+                <include layout="@layout/default_line" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/bodycheck_input_item" >
+
+                <TextView
+                    style="@style/bodycheck_title"
+                    android:text="@string/title_gbzam" />
+
+                <LinearLayout style="@style/bodycheck_data_layout" >
+
+                    <EditText
+                        android:id="@+id/edt_gbzam"
+                        style="@style/bodycheck_input"
+                        android:hint="@string/hint_input_bodycheck_data"
+                        android:tag="@+id/tv_gbzam_analysis_result" />
+
+                    <TextView
+                        android:id="@+id/tv_gbzam_analysis_result"
+                        style="@style/bodycheck_analysis_result_text" />
+                </LinearLayout>
+
+                <include layout="@layout/default_line" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/bodycheck_input_item" >
+
+                <TextView
+                    style="@style/bodycheck_title"
+                    android:text="@string/title_gczam" />
+
+                <LinearLayout style="@style/bodycheck_data_layout" >
+
+                    <EditText
+                        android:id="@+id/edt_gczam"
+                        style="@style/bodycheck_input"
+                        android:hint="@string/hint_input_bodycheck_data"
+                        android:tag="@+id/tv_gczam_analysis_result" />
+
+                    <TextView
+                        android:id="@+id/tv_gczam_analysis_result"
+                        style="@style/bodycheck_analysis_result_text" />
+                </LinearLayout>
+
+                <include layout="@layout/default_line" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/bodycheck_input_item" >
+
+                <TextView
+                    style="@style/bodycheck_title"
+                    android:text="@string/title_gaxztm" />
+
+                <LinearLayout style="@style/bodycheck_data_layout" >
+
+                    <EditText
+                        android:id="@+id/edt_gaxztm"
+                        style="@style/bodycheck_input"
+                        android:hint="@string/hint_input_bodycheck_data"
+                        android:tag="@+id/tv_gaxztm_analysis_result" />
+
+                    <TextView
+                        android:id="@+id/tv_gaxztm_analysis_result"
+                        style="@style/bodycheck_analysis_result_text" />
+                </LinearLayout>
+
+                <include layout="@layout/default_line" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/bodycheck_input_item" >
+
+                <TextView
+                    style="@style/bodycheck_title"
+                    android:text="@string/title_nsd" />
+
+                <LinearLayout style="@style/bodycheck_data_layout" >
+
+                    <EditText
+                        android:id="@+id/edt_nsd"
+                        style="@style/bodycheck_input"
+                        android:hint="@string/hint_input_bodycheck_data"
+                        android:tag="@+id/tv_nsd_analysis_result" />
+
+                    <TextView
+                        android:id="@+id/tv_nsd_analysis_result"
+                        style="@style/bodycheck_analysis_result_text" />
+                </LinearLayout>
+
+                <include layout="@layout/default_line" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/bodycheck_input_item" >
+
+                <TextView
+                    style="@style/bodycheck_title"
+                    android:text="@string/title_jg" />
+
+                <LinearLayout style="@style/bodycheck_data_layout" >
+
+                    <EditText
+                        android:id="@+id/edt_jg"
+                        style="@style/bodycheck_input"
+                        android:hint="@string/hint_input_bodycheck_data"
+                        android:tag="@+id/tv_jg_analysis_result" />
+
+                    <TextView
+                        android:id="@+id/tv_jg_analysis_result"
+                        style="@style/bodycheck_analysis_result_text" />
+                </LinearLayout>
+
+                <include layout="@layout/default_line" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/bodycheck_input_item" >
+
+                <TextView
+                    style="@style/bodycheck_title"
+                    android:text="@string/title_nwlbdb" />
+
+                <LinearLayout style="@style/bodycheck_data_layout" >
+
+                    <EditText
+                        android:id="@+id/edt_nwlbdb"
+                        style="@style/bodycheck_input"
+                        android:hint="@string/hint_input_bodycheck_data"
+                        android:tag="@+id/tv_nwlbdb_analysis_result" />
+
+                    <TextView
+                        android:id="@+id/tv_nwlbdb_analysis_result"
+                        style="@style/bodycheck_analysis_result_text" />
+                </LinearLayout>
+
+                <include layout="@layout/default_line" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <include
+        android:id="@+id/layout_toolbar"
+        layout="@layout/toolbar" />
+
+</RelativeLayout>

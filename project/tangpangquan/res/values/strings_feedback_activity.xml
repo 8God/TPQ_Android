@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hint_feedback">请您详细描述出问题的步骤，好让我们更快更好地为您服务。</string>
+    <string name="text_feedback_contact">请留下联系方式（QQ/手机号码），方便我们为您解决问题。</string>
+</resources>

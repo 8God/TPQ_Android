@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.zcmedical.tangpangquan"
+    android:layout_width="match_parent"
+    android:fitsSystemWindows="true"
+    android:layout_height="match_parent"
+    android:background="@color/common_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/layout_toolbar"
+        layout="@layout/toolbar" >
+    </include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/common_bg" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tvBs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="16dp"
+                android:gravity="center_horizontal"
+                android:text="血糖"
+                android:textColor="#333333"
+                android:textSize="45sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:gravity="center_horizontal"
+                android:text="mmol/L"
+                android:textColor="#333333"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:gravity="left"
+                android:text="血糖值"
+                android:textColor="#333333"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <antistatic.spinnerwheel.WheelHorizontalView
+                    android:id="@+id/bigNum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:selectionDivider="@drawable/divider_dark_gradient_horizontal"
+                    app:selectionDividerWidth="1px"
+                    app:visibleItems="3" />
+
+                <antistatic.spinnerwheel.WheelHorizontalView
+                    android:id="@+id/smallNum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:visibleItems="4" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="24dp"
+                android:background="#c8c8c8" />
+
+            <TextView
+                android:id="@+id/tvDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:gravity="left"
+                android:text="测量时间："
+                android:textColor="#333333"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="-25dp"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TimePicker
+                    android:id="@+id/tpTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20sp"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="2dp"
+                android:background="#c8c8c8" />
+
+            <EditText
+                android:id="@+id/etNote"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:layout_margin="16dp"
+                android:background="@drawable/common_bg_btnwhite"
+                android:gravity="top|left"
+                android:hint="  填写备注说明"
+                android:paddingLeft="5dp"
+                android:paddingTop="5dp"
+                android:textColor="#c8c8c8"
+                android:textColorHint="#c8c8c8"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

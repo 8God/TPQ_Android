@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="user_follow_count_title">关注</string>
+    <string name="user_fans_count_title">粉丝</string>
+    <string name="user_follow_circle_count_title">圈子</string>
+    <string name="follow_user_title">关注</string>
+    <string name="cancel_follow_user_title">取消关注</string>
+    <string name="unmarried">未婚</string>
+    <string name="married">已婚</string>
+    <string name="unknown">未知</string>
+</resources>

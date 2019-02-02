@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="title_operation_time">手术时间</string>
+    <string name="title_record_time">录入时间</string>
+    <string name="hint_select_operation_time">请选择手术时间</string>
+    <string name="hint_select_record_time">请选择录入时间</string>
+    <string name="hint_input_bodycheck_data">请输入数据</string>
+    <string name="title_bxb">白细胞(10^g/L)</string>
+    <string name="title_lbxb">淋巴细胞(10^g/L)</string>
+    <string name="title_hxb">红细胞(10^g/L)</string>
+    <string name="title_xhdb">血红蛋白(g/L)</string>
+    <string name="title_qbdb">前白蛋白(g/L)</string>
+    <string name="title_ztdb">转铁蛋白(g/L)</string>
+    <string name="title_kfxt">空腹血糖(mmol/L)</string>
+    <string name="title_ch2xsxt">餐后2小时血糖(mmol/L)</string>
+    <string name="title_thxhdb">糖化血红蛋白(%)</string>
+    <string name="title_kfyds">空腹胰岛素(mU/L)</string>
+    <string name="title_kfct">空腹C肽(mmol/L)</string>
+    <string name="title_ch2xsyds">餐后2小时胰岛素(mU/L)</string>
+    <string name="title_ch2xsct">餐后2小时C肽(mmol/L)</string>
+    <string name="title_bdb">白蛋白(g/L)</string>
+    <string name="title_gysz">甘油三酯(mmol/L)</string>
+    <string name="title_dgc">胆固醇(mmol/L)</string>
+    <string name="title_dmdzdb">低密度脂蛋白(mmol/L)</string>
+    <string name="title_gmdzdb">高密度脂蛋白(mmol/L)</string>
+    <string name="title_ns">尿酸(μmol/L)</string>
+    <string name="title_gbzam">谷丙转氨酶(U/L)</string>
+    <string name="title_gczam">谷草转氨酶(U/L)</string>
+    <string name="title_gaxztm">γ-谷氨酰转肽酶(U/L)</string>
+    <string name="title_nsd">尿素氮(mmol/L)</string>
+    <string name="title_jg">肌酐(μmol/L)</string>
+    <string name="title_nwlbdb">尿微量白蛋白(mg/L)</string>
+    <string name="title_bodycheck_quota_low">偏低</string>
+    <string name="title_bodycheck_quota_normal">正常</string>
+    <string name="title_bodycheck_quota_high">偏高</string>
+
+</resources>

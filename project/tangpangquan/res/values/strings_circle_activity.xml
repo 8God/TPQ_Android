@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="following_circle">加入圈子中</string>
+    <string name="cancel_following_circle">退出圈子中</string>
+    <string name="no_logon_follow_circle_tips">登录才能加入圈子</string>
+    <string name="follow_successful">加入成功</string>
+    <string name="cancel_follow_successful">退出成功</string>
+    <string name="circle_activity_title">圈子</string>
+</resources>

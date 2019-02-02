@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layout_toolbar"
+        android:layout_marginTop="-4dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:descendantFocusability="blocksDescendants"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/rl_user_head"
+                style="@style/personal_center_item"
+                android:layout_height="72dp" >
+
+                <TextView
+                    style="@style/TextView.PersonalCenterItemText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="我的头像" />
+
+                <ImageView
+                    android:id="@+id/imv_arrow_user_head"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="12dp"
+                    android:src="@drawable/right_arrow_icon" />
+
+                <com.zcmedical.common.widget.CircleImageView
+                    android:id="@+id/cimv_user_head"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="8dp"
+                    android:layout_toLeftOf="@id/imv_arrow_user_head"
+                    android:src="@drawable/common_icon_default_user_head" />
+            </RelativeLayout>
+
+            <include layout="@layout/view_default_line" />
+
+            <RelativeLayout
+                android:id="@+id/rl_nick_name"
+                style="@style/personal_center_item"
+                android:layout_height="48dp" >
+
+                <TextView
+                    style="@style/TextView.PersonalCenterItemText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="我的昵称" />
+
+                <ImageView
+                    android:id="@+id/imv_arrow_nick_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="12dp"
+                    android:src="@drawable/right_arrow_icon" />
+
+                <TextView
+                    android:id="@+id/tv_nick_name"
+                    style="@style/TextView.PersonalCenterInfoText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="8dp"
+                    android:layout_toLeftOf="@id/imv_arrow_nick_name"
+                    android:text="小锤子" />
+            </RelativeLayout>
+
+            <include layout="@layout/view_default_line" />
+
+            <RelativeLayout
+                android:id="@+id/rl_account_safety"
+                style="@style/personal_center_item"
+                android:layout_height="48dp" >
+
+                <TextView
+                    style="@style/TextView.PersonalCenterItemText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="账号安全" />
+
+                <ImageView
+                    android:id="@+id/imv_arrow_account_safety"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="12dp"
+                    android:src="@drawable/right_arrow_icon" />
+
+                <TextView
+                    android:id="@+id/tv_account_safety"
+                    style="@style/TextView.PersonalCenterInfoText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="8dp"
+                    android:layout_toLeftOf="@id/imv_arrow_account_safety"
+                    android:text="13888888888" />
+            </RelativeLayout>
+
+            <include layout="@layout/view_default_line" />
+
+            <RelativeLayout
+                android:id="@+id/rl_my_level"
+                style="@style/personal_center_item"
+                android:layout_height="48dp"
+                android:visibility="gone" >
+
+                <TextView
+                    style="@style/TextView.PersonalCenterItemText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="我的等级" />
+
+                <ImageView
+                    android:id="@+id/imv_arrow_my_level"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="12dp"
+                    android:src="@drawable/right_arrow_icon" />
+
+                <TextView
+                    android:id="@+id/tv_my_level"
+                    style="@style/TextView.PersonalCenterInfoText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="8dp"
+                    android:layout_toLeftOf="@id/imv_arrow_my_level"
+                    android:text="Lv.1" />
+            </RelativeLayout>
+
+            <include
+                layout="@layout/view_default_line"
+                android:visibility="gone" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@color/default_background" />
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                layout="@layout/view_default_line" />
+
+            <RelativeLayout
+                android:id="@+id/rl_username"
+                style="@style/personal_center_item"
+                android:layout_height="48dp" >
+
+                <TextView
+                    style="@style/TextView.PersonalCenterItemText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="真实姓名" />
+
+                <ImageView
+                    android:id="@+id/imv_arrow_username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="12dp"
+                    android:src="@drawable/right_arrow_icon" />
+
+                <TextView
+                    android:id="@+id/tv_username"
+                    style="@style/TextView.PersonalCenterInfoText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="8dp"
+                    android:layout_toLeftOf="@id/imv_arrow_username"
+                    android:text="王大锤" />
+            </RelativeLayout>
+
+            <include layout="@layout/view_default_line" />
+
+            <RelativeLayout
+                android:id="@+id/rl_sex"
+                style="@style/personal_center_item"
+                android:layout_height="48dp" >
+
+                <TextView
+                    style="@style/TextView.PersonalCenterItemText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="性别" />
+
+                <ImageView
+                    android:id="@+id/imv_arrow_sex"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="12dp"
+                    android:src="@drawable/right_arrow_icon" />
+
+                <TextView
+                    android:id="@+id/tv_sex"
+                    style="@style/TextView.PersonalCenterInfoText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="8dp"
+                    android:layout_toLeftOf="@id/imv_arrow_sex"
+                    android:text="男" />
+            </RelativeLayout>
+
+            <include layout="@layout/view_default_line" />
+
+            <RelativeLayout
+                android:id="@+id/rl_marital_status"
+                style="@style/personal_center_item"
+                android:layout_height="48dp" >
+
+                <TextView
+                    style="@style/TextView.PersonalCenterItemText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="婚姻状况" />
+
+                <ImageView
+                    android:id="@+id/imv_arrow_marital_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="12dp"
+                    android:src="@drawable/right_arrow_icon" />
+
+                <TextView
+                    android:id="@+id/tv_marital_status"
+                    style="@style/TextView.PersonalCenterInfoText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="8dp"
+                    android:layout_toLeftOf="@id/imv_arrow_marital_status"
+                    android:text="未婚" />
+            </RelativeLayout>
+
+            <include layout="@layout/view_default_line" />
+
+            <RelativeLayout
+                android:id="@+id/rl_birthday"
+                style="@style/personal_center_item"
+                android:layout_height="48dp" >
+
+                <TextView
+                    style="@style/TextView.PersonalCenterItemText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="生日" />
+
+                <ImageView
+                    android:id="@+id/imv_arrow_birthday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="12dp"
+                    android:src="@drawable/right_arrow_icon" />
+
+                <TextView
+                    android:id="@+id/tv_birthday"
+                    style="@style/TextView.PersonalCenterInfoText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="8dp"
+                    android:layout_toLeftOf="@id/imv_arrow_birthday"
+                    android:text="7月14日" />
+            </RelativeLayout>
+
+            <include layout="@layout/view_default_line" />
+
+            <RelativeLayout
+                android:id="@+id/rl_city"
+                style="@style/personal_center_item"
+                android:layout_height="48dp" >
+
+                <TextView
+                    style="@style/TextView.PersonalCenterItemText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="所在城市" />
+
+                <ImageView
+                    android:id="@+id/imv_arrow_city"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="12dp"
+                    android:src="@drawable/right_arrow_icon" />
+
+                <TextView
+                    android:id="@+id/tv_city"
+                    style="@style/TextView.PersonalCenterInfoText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="8dp"
+                    android:layout_toLeftOf="@id/imv_arrow_city"
+                    android:text="广州" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btn_logout"
+                style="@style/blue_button_style"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="16dp"
+                android:text="切换账号" />
+        </LinearLayout>
+    </ScrollView>
+
+    <include
+        android:id="@+id/layout_toolbar"
+        layout="@layout/toolbar" />
+
+</RelativeLayout>

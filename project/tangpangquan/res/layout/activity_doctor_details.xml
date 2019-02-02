@@ -1,0 +1,643 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:paddingBottom="20dp"
+    android:fitsSystemWindows="true"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/ivBg"
+            android:layout_width="match_parent"
+            android:layout_height="106dp"
+            android:layout_alignParentTop="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/psn_bg_headbg" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ivBack"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bg_bac_img" />
+
+        <TextView
+            android:id="@+id/tvFans"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="56dp"
+            android:text="2290 粉丝"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+
+        <com.zcmedical.tangpangquan.view.RoundedImageView
+            android:id="@+id/ivHead"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="56dp"
+            android:src="@drawable/ic_launcher" />
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_below="@id/ivBg"
+            android:gravity="center"
+            android:text="教授"
+            android:textColor="#333333"
+            android:textSize="18sp" />
+
+        <View
+            android:id="@+id/vLine1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/tvName"
+            android:background="#c8c8c8" />
+
+        <LinearLayout
+            android:id="@+id/ll1"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:layout_below="@id/vLine1"
+            android:orientation="horizontal"
+            android:weightSum="2" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:weightSum="2" >
+
+                <TextView
+                    android:id="@+id/tvClass"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="主任医师 教授"
+                    android:textColor="#333333"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tvHospital"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="医院"
+                    android:textColor="#666666"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#c8c8c8" />
+
+            <TextView
+                android:id="@+id/tvTeam"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="团队"
+                android:textColor="#333333"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/vLine2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/ll1"
+            android:background="#c8c8c8" />
+
+        <TextView
+            android:id="@+id/tvGood"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_below="@id/vLine2"
+            android:drawablePadding="12dp"
+            android:drawableRight="@drawable/common_icon_arrow"
+            android:gravity="center"
+            android:lines="2"
+            android:paddingLeft="16dp"
+            android:paddingRight="12dp"
+            android:text="擅长："
+            android:textColor="#333333"
+            android:textSize="14sp" />
+
+        <View
+            android:id="@+id/vLine3"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/tvGood"
+            android:background="#c8c8c8" />
+
+        <View
+            android:id="@+id/vLine4"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_below="@id/vLine3"
+            android:background="#f0f3f5" />
+
+        <View
+            android:id="@+id/vLine5"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/vLine4"
+            android:background="#c8c8c8" />
+
+        <LinearLayout
+            android:id="@+id/ll2"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_below="@id/vLine5"
+            android:orientation="horizontal"
+            android:weightSum="2" >
+
+            <TextView
+                android:id="@+id/tvScore1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="16dp"
+                android:text="推荐指数："
+                android:textColor="#333333"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:weightSum="3" >
+
+                <ImageView
+                    android:id="@+id/ivScore1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:scaleType="center"
+                    android:src="@drawable/qanda_icon_arrowhigher" />
+
+                <TextView
+                    android:id="@+id/tvHigher1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="left|center_vertical"
+                    android:paddingRight="16dp"
+                    android:text="高于同行"
+                    android:textColor="@color/arror_high"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/vLine6"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/ll2"
+            android:background="#c8c8c8" />
+
+        <LinearLayout
+            android:id="@+id/ll3"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_below="@id/vLine6"
+            android:orientation="horizontal"
+            android:weightSum="2" >
+
+            <TextView
+                android:id="@+id/tvScore2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="16dp"
+                android:text="服务态度："
+                android:textColor="#333333"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:weightSum="3" >
+
+                <ImageView
+                    android:id="@+id/ivScore2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:scaleType="center"
+                    android:src="@drawable/qanda_icon_arrowhigher" />
+
+                <TextView
+                    android:id="@+id/tvHigher2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="left|center_vertical"
+                    android:paddingRight="16dp"
+                    android:text="高于同行"
+                    android:textColor="@color/arror_high"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/vLine7"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/ll3"
+            android:background="#c8c8c8" />
+
+        <LinearLayout
+            android:id="@+id/ll4"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_below="@id/vLine7"
+            android:orientation="horizontal"
+            android:weightSum="2" >
+
+            <TextView
+                android:id="@+id/tvScore3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="16dp"
+                android:text="医疗水平："
+                android:textColor="#333333"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:weightSum="3" >
+
+                <ImageView
+                    android:id="@+id/ivScore3"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:scaleType="center"
+                    android:src="@drawable/qanda_icon_arrowhigher" />
+
+                <TextView
+                    android:id="@+id/tvHigher3"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="left|center_vertical"
+                    android:paddingRight="16dp"
+                    android:text="高于同行"
+                    android:textColor="@color/arror_high"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/vLine8"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/ll4"
+            android:background="#c8c8c8" />
+
+        <View
+            android:id="@+id/vLine9"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_below="@id/vLine8"
+            android:background="#f0f3f5" />
+
+        <View
+            android:id="@+id/vLine10"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/vLine9"
+            android:background="#c8c8c8" />
+
+        <RelativeLayout
+            android:id="@+id/rl1"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_below="@id/vLine10" >
+
+            <TextView
+                android:id="@+id/tvEvaluation"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="16dp"
+                android:gravity="center_vertical"
+                android:text="用户评价"
+                android:textColor="#666666"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tvMore"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="8dp"
+                android:drawableRight="@drawable/common_icon_arrowblue"
+                android:gravity="center_vertical"
+                android:text="更多"
+                android:textColor="#29b6f6"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/vLine11"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/rl1"
+            android:background="#c8c8c8" />
+
+        <RelativeLayout
+            android:id="@+id/rlUser1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/vLine11"
+            android:padding="16dp" >
+
+            <TextView
+                android:id="@+id/tvUser1"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:gravity="center_vertical"
+                android:text="用户:"
+                android:textColor="#333333"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tvSay1"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginLeft="12dp"
+                android:layout_toRightOf="@id/tvUser1"
+                android:gravity="center_vertical"
+                android:text="很满意"
+                android:textColor="#333333"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tvUserContent1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvUser1"
+                android:layout_marginTop="16dp"
+                android:gravity="center_vertical"
+                android:text="正在加载、、"
+                android:textColor="#666666"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/vLine12"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/rlUser1"
+            android:background="#c8c8c8" />
+
+        <RelativeLayout
+            android:id="@+id/rlUser2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/vLine12"
+            android:padding="16dp" >
+
+            <TextView
+                android:id="@+id/tvUser2"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:gravity="center_vertical"
+                android:text="用户:"
+                android:textColor="#333333"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tvSay2"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginLeft="12dp"
+                android:layout_toRightOf="@id/tvUser2"
+                android:gravity="center_vertical"
+                android:text="很满意"
+                android:textColor="#333333"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tvUserContent2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvUser2"
+                android:layout_marginTop="16dp"
+                android:gravity="center_vertical"
+                android:text="正在加载、、"
+                android:textColor="#666666"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/vLine13"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/rlUser2"
+            android:background="#c8c8c8" />
+
+        <RelativeLayout
+            android:id="@+id/rlUser3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/vLine13"
+            android:padding="16dp" >
+
+            <TextView
+                android:id="@+id/tvUser3"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:gravity="center_vertical"
+                android:text="用户:"
+                android:textColor="#333333"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tvSay3"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginLeft="12dp"
+                android:layout_toRightOf="@id/tvUser3"
+                android:gravity="center_vertical"
+                android:text="很满意"
+                android:textColor="#333333"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tvUserContent3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvUser3"
+                android:layout_marginTop="16dp"
+                android:gravity="center_vertical"
+                android:text="正在加载、、"
+                android:textColor="#666666"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/vLine14"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/rlUser3"
+            android:background="#c8c8c8" />
+
+        <RelativeLayout
+            android:id="@+id/rlUser4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/vLine14"
+            android:padding="16dp" >
+
+            <TextView
+                android:id="@+id/tvUser4"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:gravity="center_vertical"
+                android:text="用户:"
+                android:textColor="#333333"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tvSay4"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginLeft="12dp"
+                android:layout_toRightOf="@id/tvUser4"
+                android:gravity="center_vertical"
+                android:text="很满意"
+                android:textColor="#333333"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tvUserContent4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvUser4"
+                android:layout_marginTop="16dp"
+                android:gravity="center_vertical"
+                android:text="正在加载、、"
+                android:textColor="#666666"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/vLine15"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/rlUser4"
+            android:background="#c8c8c8" />
+
+        <RelativeLayout
+            android:id="@+id/rlUser5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/vLine15"
+            android:padding="16dp" >
+
+            <TextView
+                android:id="@+id/tvUser5"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:gravity="center_vertical"
+                android:text="用户:"
+                android:textColor="#333333"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tvSay5"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginLeft="12dp"
+                android:layout_toRightOf="@id/tvUser5"
+                android:gravity="center_vertical"
+                android:text="很满意"
+                android:textColor="#333333"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tvUserContent5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvUser5"
+                android:layout_marginTop="16dp"
+                android:gravity="center_vertical"
+                android:text="正在加载、、"
+                android:textColor="#666666"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/vLine16"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/rlUser5"
+            android:background="#c8c8c8" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_below="@id/vLine16"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:weightSum="2" >
+
+            <Button
+                android:id="@+id/btnFollow"
+                android:layout_width="0dp"
+                android:layout_height="44dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_btn_white"
+                android:text="关注"
+                android:textColor="#29b6f6"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/btnAsk"
+                android:layout_width="0dp"
+                android:layout_height="44dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_btn_login"
+                android:text="我要咨询"
+                android:textColor="#ffffff"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources><string name="menu_title_search">搜索</string>
+<string name="no_search_result_tips">很抱歉，暂时没有找到符合该关键字的话题</string>
+<string name="searching">搜索中</string>
+    
+</resources>

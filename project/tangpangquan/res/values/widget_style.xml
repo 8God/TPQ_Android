@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="TextView.Title" parent="AppTheme">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/dark_gray</item>
+    </style>
+
+    <style name="TextView.SubTitle" parent="AppTheme">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/middle_gray</item>
+    </style>
+
+    <style name="TextView.Tips" parent="AppTheme">
+        <item name="android:textSize">11sp</item>
+        <item name="android:textColor">@color/gray</item>
+    </style>
+
+    <style name="TextView.PersonalCenterItemText" parent="AppTheme">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/dark_gray</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <style name="TextView.PersonalCenterInfoText" parent="AppTheme">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/middle_gray</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+    <style name="personal_center_item">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">44dp</item>
+        <item name="android:background">@drawable/selector_default_pressed</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">false</item>
+        <item name="android:focusableInTouchMode">true</item>
+    </style>
+
+    <style name="blue_button_style">
+        <item name="android:background">@drawable/selector_default_btn_blue</item>
+        <item name="android:textColor">@drawable/selector_blue_btn_text_color</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="white_button_style">
+        <item name="android:background">@drawable/selector_default_btn_white</item>
+        <item name="android:textColor">@color/middle_gray</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="ProgressBar.Default" parent="@android:style/Widget.ProgressBar.Horizontal">
+        <item name="android:progressDrawable">@drawable/layerlist_progressbar_default_horizontal</item>
+    </style>
+
+    <style name="bodycheck_input_item">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:background">@android:color/white</item>
+        <item name="android:clickable">false</item>
+        <item name="android:focusable">false</item>
+        <item name="android:descendantFocusability">afterDescendants</item>
+        <item name="android:focusableInTouchMode">false</item>
+    </style>
+
+    <style name="bodycheck_title" parent="@android:style/Widget.TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/dark_gray</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginLeft">16dp</item>
+    </style>
+
+    <style name="bodycheck_analysis_result_text" parent="@android:style/Widget.TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginLeft">16dp</item>
+        <item name="android:visibility">gone</item>
+        <item name="android:text">正常</item>
+    </style>
+
+    <style name="bodycheck_input" parent="@android:style/Widget.EditText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/dark_gray</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:background">@null</item>
+        <item name="android:gravity">right</item>
+        <item name="android:inputType">numberDecimal</item>
+    </style>
+
+    <style name="bodycheck_data_layout">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_marginRight">16dp</item>
+    </style>
+
+</resources>

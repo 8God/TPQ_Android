@@ -1,0 +1,131 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <RelativeLayout
+        android:id="@+id/rl_data_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ll_posts_detail_tabbar"
+        android:layout_below="@+id/layout_toolbar"
+        android:layout_marginTop="-4dp" >
+
+        <com.zcmedical.common.component.AutoLoadMoreListView
+            android:id="@+id/almlv_comments"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="-4dp"
+            android:divider="@null" />
+
+        <com.zcmedical.tangpangquan.view.BackToTopBtn
+            android:id="@+id/btn_back_to_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="12dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_posts_detail_tabbar"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/tab_bg"
+        android:orientation="horizontal"
+        android:paddingTop="3dp" >
+
+        <RelativeLayout
+            android:id="@+id/rl_posts_likes"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_default_pressed" >
+
+            <ImageView
+                android:id="@+id/imv_posts_likes_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/tv_likes"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="4dp"
+                android:src="@drawable/selector_bbs_btn_like" />
+
+            <TextView
+                android:id="@+id/tv_likes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="4dp"
+                android:text="点赞"
+                android:textColor="@color/middle_gray"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_posts_collect"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_default_pressed" >
+
+            <ImageView
+                android:id="@+id/imv_posts_collect_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/tv_collect"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="4dp"
+                android:src="@drawable/selector_bbs_btn_collect" />
+
+            <TextView
+                android:id="@+id/tv_collect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="4dp"
+                android:text="收藏"
+                android:textColor="@color/middle_gray"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_posts_comment"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_default_pressed" >
+
+            <ImageView
+                android:id="@+id/imv_posts_comment_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/tv_comment"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="4dp"
+                android:src="@drawable/selector_bbs_btn_comment" />
+
+            <TextView
+                android:id="@+id/tv_comment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="4dp"
+                android:text="评论"
+                android:textColor="@color/middle_gray"
+                android:textSize="12sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <include
+        android:id="@+id/layout_toolbar"
+        layout="@layout/toolbar" />
+
+</RelativeLayout>

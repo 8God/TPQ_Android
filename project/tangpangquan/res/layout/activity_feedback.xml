@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/default_background"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical" >
+
+    <include layout="@layout/toolbar" />
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="6dp"
+        layout="@layout/default_line" />
+
+    <EditText
+        android:id="@+id/edt_feedback_content"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:background="@android:color/white"
+        android:gravity="top|left"
+        android:hint="@string/hint_feedback"
+        android:paddingBottom="12dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="12dp"
+        android:textColor="@color/dark_gray"
+        android:textSize="14sp" />
+
+    <include layout="@layout/default_line" />
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="10dp"
+        layout="@layout/default_line" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:background="@android:color/white"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:paddingLeft="16dp"
+        android:singleLine="true"
+        android:text="@string/text_feedback_contact"
+        android:textSize="12sp" />
+
+    <include layout="@layout/default_line" />
+
+    <EditText
+        android:id="@+id/edt_feedback_qq"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:hint="请输入QQ号"
+        android:paddingLeft="16dp"
+        android:textColor="@color/dark_gray"
+        android:textSize="16sp" />
+
+    <include layout="@layout/default_line" />
+
+    <EditText
+        android:id="@+id/edt_feedback_mobile"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:hint="请输入手机号码"
+        android:paddingLeft="16dp"
+        android:textColor="@color/dark_gray"
+        android:textSize="16sp" />
+
+    <include layout="@layout/default_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/btn_submit_feedback"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/selector_default_btn_blue"
+            android:text="提交反馈"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:gravity="center_horizontal"
+            android:text="加入客服QQ群，尽情向我们吐槽\n12345678"
+            android:textColor="@color/dark_gray"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+</LinearLayout>

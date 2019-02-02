@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.zcmedical.tangpangquan"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical" >
+
+    <include layout="@layout/toolbar" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:text="@string/text_identifying_code_has_send"
+        android:textColor="@color/dark_gray"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_mobile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:text="1388888888"
+        android:textColor="@color/dark_gray"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp" >
+
+        <com.zcmedical.common.widget.ClearTextEditText
+            android:id="@+id/ctedt_identifying_code"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="@string/hint_input_identifying_code"
+            android:singleLine="true" />
+
+        <com.zcmedical.common.widget.ClearTextEditText
+            android:id="@+id/ctedt_new_psw"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="@string/hint_input_password"
+            android:inputType="textPassword"
+            android:singleLine="true" />
+
+        <com.zcmedical.common.widget.ClearTextEditText
+            android:id="@+id/ctedt_new_psw_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="@string/hint_input_password_confirm"
+            android:inputType="textPassword"
+            android:singleLine="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp" >
+
+        <com.zcmedical.common.widget.CountDownButton
+            android:id="@+id/btn_get_verification_code"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_default_btn_white"
+            android:text="重新获取"
+            android:textColor="@color/middle_gray"
+            android:textSize="18sp"
+            app:countDouwn_textColor="@color/disabled_text_color" />
+
+        <Button
+            android:id="@+id/btn_reset_psw"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="16dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_default_btn_blue"
+            android:text="@string/yes"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</LinearLayout>

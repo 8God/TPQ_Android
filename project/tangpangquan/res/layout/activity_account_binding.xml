@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:descendantFocusability="blocksDescendants"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical" >
+
+    <include layout="@layout/toolbar" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="6dp"
+        android:background="@color/default_background" />
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        layout="@layout/default_line" />
+
+    <RelativeLayout
+        android:id="@+id/rl_accountphone"
+        style="@style/personal_center_item"
+        android:layout_height="48dp" >
+
+        <ImageView
+            android:id="@+id/imv_accountphone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/psn_icon_accountphone" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:layout_toRightOf="@id/imv_accountphone"
+            android:text="手机号码"
+            android:textColor="@color/dark_gray"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_accountphone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:enabled="false"
+                android:text="未绑定"
+                android:textColor="@drawable/selector_default_text_color"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/imv_accountphone_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:src="@drawable/right_arrow_icon" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <include layout="@layout/default_line" />
+
+    <RelativeLayout
+        android:id="@+id/rl_accountwechat"
+        style="@style/personal_center_item"
+        android:layout_height="48dp" >
+
+        <ImageView
+            android:id="@+id/imv_accountwechat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/psn_icon_accountwechat" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:layout_toRightOf="@id/imv_accountwechat"
+            android:text="微信账号"
+            android:textColor="@color/dark_gray"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_accountwechat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:enabled="false"
+                android:text="未绑定"
+                android:textColor="@drawable/selector_default_text_color"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/imv_accountwechat_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:src="@drawable/right_arrow_icon" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <include layout="@layout/default_line" />
+
+    <RelativeLayout
+        android:id="@+id/rl_accountqq"
+        style="@style/personal_center_item"
+        android:layout_height="48dp" >
+
+        <ImageView
+            android:id="@+id/imv_accountqq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/psn_icon_accountqq" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:layout_toRightOf="@id/imv_accountqq"
+            android:text="QQ号码"
+            android:textColor="@color/dark_gray"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_accountqq"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:enabled="false"
+                android:text="未绑定"
+                android:textColor="@drawable/selector_default_text_color"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/imv_accountqq_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:src="@drawable/right_arrow_icon" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <include layout="@layout/default_line" />
+
+    <RelativeLayout
+        android:id="@+id/rl_accountweibo"
+        style="@style/personal_center_item"
+        android:layout_height="48dp" >
+
+        <ImageView
+            android:id="@+id/imv_accountweibo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/psn_icon_accountweibo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:layout_toRightOf="@id/imv_accountweibo"
+            android:text="微博号码"
+            android:textColor="@color/dark_gray"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_accountweibo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:enabled="false"
+                android:text="未绑定"
+                android:textColor="@drawable/selector_default_text_color"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/imv_accountweibo_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:src="@drawable/right_arrow_icon" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <include layout="@layout/default_line" />
+
+</LinearLayout>

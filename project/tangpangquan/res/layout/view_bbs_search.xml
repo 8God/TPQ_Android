@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:gravity="center_vertical"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp" >
+
+    <EditText
+        android:id="@+id/edt_bbs_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:hint="@string/searchable_hint"
+        android:layout_toLeftOf="@+id/imvbtn_clear_input"
+        android:imeOptions="actionSearch"
+        android:singleLine="true"
+        android:textColorHint="#6ACCF9"
+        android:textColor="@android:color/white"
+        android:textCursorDrawable="@null" />
+
+    <ImageButton
+        android:id="@+id/imvbtn_clear_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/edt_bbs_search"
+        android:background="@null"
+        android:visibility="gone"
+        android:src="@drawable/abc_ic_clear_mtrl_alpha" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/edt_bbs_search"
+        android:layout_marginTop="4dp"
+        android:background="@android:color/white" />
+
+</RelativeLayout>

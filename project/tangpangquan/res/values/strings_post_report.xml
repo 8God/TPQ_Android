@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="bbs_report_title">举报</string>
+    <string name="report_request_submit">提交</string>
+    <string name="report_request_submitting">提交中</string>
+    <string name="bbs_report_tips">请选择您的举报理由，以便我们甄别。</string>
+
+</resources>

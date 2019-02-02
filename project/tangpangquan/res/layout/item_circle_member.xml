@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_default_pressed"
+        android:paddingBottom="12dp" >
+
+        <com.zcmedical.common.widget.CircleImageView
+            android:id="@+id/cimv_user_head"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="12dp"
+            android:src="@drawable/common_icon_default_user_head" />
+
+        <LinearLayout
+            android:id="@+id/ll_user_basic_infos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:layout_toLeftOf="@+id/ll_user_infos"
+            android:layout_toRightOf="@id/cimv_user_head"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_user_name"
+                style="@style/TextView.Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="用户名" />
+
+            <TextView
+                android:id="@+id/tv_user_level"
+                style="@style/TextView.SubTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="Lv.1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_user_infos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp"
+            android:orientation="vertical" >
+             <TextView
+                android:id="@+id/tv_user_fans_count"
+                style="@style/TextView.Tips"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="100 粉丝" />
+             
+              <TextView
+                android:id="@+id/tv_user_posts_count"
+                style="@style/TextView.Tips"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="100 发布" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/lineColor" />
+
+</LinearLayout>

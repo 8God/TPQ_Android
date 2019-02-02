@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="post_title_hint">请输入标题</string>
+    <string name="post_content_hint">请输入内容</string>
+    <string name="publish_post_submitting">发布中</string>
+    <string name="publish_post">发布</string>
+    <string name="exit_circle">退出</string>
+    <string name="add_pic_dialog_title">添加图片</string>
+    <string name="no_title_tips">有标题才会更多人看到哦~</string>
+    <string name="title_length_error">标题不得少于8个字符哦~</string>
+    <string name="no_content_tips">内容不能为空哦~</string>
+    <string name="content_length_too_long">话题正文不能为空或者超过5000字哦~</string>
+    <string name="no_forum_tips">请选择您要发布的圈子哦~</string>
+    <string name="publish_successful">提交成功</string>
+    <string name="select_circle_dialog_title">选择圈子</string>
+    <string name="cancel_publish_post_alert">您确定取消新话题的创建么？</string>
+    <string name="you_had_followed">您已关注</string>
+
+</resources>

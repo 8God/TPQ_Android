@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">UDr</string>
+    <string name="xlistview_header_hint_normal">下拉刷新</string>
+    <string name="xlistview_header_hint_ready">松手开始刷新</string>
+    <string name="xlistview_header_hint_loading">正在更新数据</string>
+    <string name="xlistview_header_last_time">最近一次更新在：</string>
+    <string name="xlistview_footer_hint_normal">更多</string>
+    <string name="xlistview_footer_hint_ready">松手开始更新</string>
+    <string name="isMobileNetworkTips">您现在连接的是移动网络，继续观看会产生流量费用，是否继续？</string>
+    <string name="loading_pb_title">正在更新数据</string>
+    <string name="no_record_found_s">暂无数据</string>
+    <string name="title_activity_posts">话题</string>
+    <string name="yes">确定</string>
+    <string name="no">取消</string>
+    <string name="no_logon_tips">请先登录</string>
+    <string name="title_publish_post_activity">创建话题</string>
+    <string name="title_post_comment_activity">回复</string>
+    <string name="searchable_hint">请输入搜索内容</string>
+    <string name="fans_title">粉丝</string>
+    <string name="posts_count_title">发布</string>
+    <string name="title_logon_activity">登录</string>
+    <string name="title_registeration_activity">注册</string>
+    <string name="title_forget_password_activity">忘记密码</string>
+    <string name="title_about_us_activity">关于我们</string>
+    <string name="title_feedback_activity">意见反馈</string>
+
+</resources>

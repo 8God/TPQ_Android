@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/default_background"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:background="@drawable/selector_default_pressed" >
+
+        <LinearLayout
+            android:id="@+id/rl_posts_type"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="8dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/imv_top_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="4dp"
+                android:background="@drawable/bbs_icon_uptotop" />
+
+            <ImageView
+                android:id="@+id/imv_essence_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="4dp"
+                android:src="@drawable/bbs_icon_essence" />
+
+            <ImageView
+                android:id="@+id/imv_hot_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/bbs_icon_hot" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_posts_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="12dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/rl_posts_type"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:text="帖子标题帖子标题帖子标题帖子标题帖子标题帖子标题"
+            android:textColor="@color/dark_gray"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/lineColor" />
+
+    <View
+        android:id="@+id/line_top_posts_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="10dp"
+        android:background="@color/lineColor" />
+
+</LinearLayout>

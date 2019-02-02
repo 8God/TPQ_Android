@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="alert_no_comment_content">要填写回复内容哦~</string>
+    <string name="comment_length_illegal">回复内容不能超过200字哦~</string>
+    <string name="publishing_comment">评论提交中</string>
+    <string name="publish_comment_successful">回复成功</string>
+    <string name="cancel_comment_alert">您确定取消该回复的发送吗？</string>
+</resources>

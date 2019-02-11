@@ -7,7 +7,7 @@ UDr是国内首个针对肥胖人士及糖尿病人士的健康类信息咨询�
 3. 专业医疗团队24小时在线帮您解决肥胖与糖尿病问题；
 4. 针对肥胖与糖尿病人士的温馨社区，有TA您不再孤单。
 
-该应用为梅州市双码有限公司开发，并已上线应用宝，应用链接：[点我](https://sj.qq.com/myapp/detail.htm?apkName=com.zcmedical.tangpangquan)
+该应用为双码科技公司开发，并已上线应用宝，应用链接：[点我](https://sj.qq.com/myapp/detail.htm?apkName=com.zcmedical.tangpangquan)
 
 
 ## 应用截图
